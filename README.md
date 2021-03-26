@@ -28,14 +28,32 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    - `.forEach` & `.map` are advanced array methods, they both loop through each  item of the array to make given changes on the item in the array .
+    - `.forEach` manipulates each item in the given original array and needs to explicitly return the results.
+    - `.map` does not change the "orginal" array but returns a new array with changes.
 
 2. Explain the difference between a callback and a higher order function.
+    - 'Higher order function' is a function that receives other functions as arguments.
+    - 'Callback function' is a function that is passed into another function as an argument.
+    Example in this sprint challenge, 'consume' is a high order function and 'add' and 'multiply' are callback functions.
 
 3. What is closure?
+    - A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment)
+    - A closure is when an inner function reaches out of its scope to grab a variable defined in an outer function and retains access to the variables created in its outer function.
 
 4. Describe the four rules of the 'this' keyword.
+    - 'Window binding' :  when "this" is declared in global scope by default has window binding unless it's within a scope or given a context or in strict mode.
 
+    - 'Implicit binding' :Is when we invoke a method on a object. Explicitly saying on which object the method is invoked. Object is always to the left of invoked method before dot.
+    Exampls: cuboid.volume(); 
+
+    - 'Explicit binding' : We tell a function what the 'this' keyword should be using .call, .apply or .bind. When we call one of these methods passing an object, we are explicitly telling which object "this" should bind to.
+
+    - 'New binding; : When a function is invoked with a new keyword , the this keyword inside that function is bound to the new object being constructed.
+    
 5. Why do we need super() in an extended class?
+    - The 'super' keyword is used to access and call functions on an object's parent.
+    
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
